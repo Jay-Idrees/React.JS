@@ -84,9 +84,11 @@ function component() {
 
 ```javascript
 
-- 1) Local styling inside the component
+// 1) Local styling inside the component
 
 import React from "react";
+
+// Note that here the styles is an object. Unlike HTML where you can invoke style as string, in react it must be an object
 
 const styles = {
   card: {
@@ -106,8 +108,10 @@ const styles = {
   }
 };
 
+
 function Card() {
   return (
+      // Note the difference, styles.card is object oriented programming
     <div style={styles.card}>
       <div style={styles.heading}>Lorem ipsum dolor</div>
       <div style={styles.content}>
