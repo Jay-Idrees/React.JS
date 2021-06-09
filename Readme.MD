@@ -85,7 +85,7 @@ function component() {
 
 ```javascript
 
-// 1) Local styling inside the component
+// Local styling inside the component
 
 import React from "react";
 
