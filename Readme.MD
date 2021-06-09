@@ -52,6 +52,25 @@ export default App;
 
 `ReactDOM.render(<App />, document.getElementById('root'));` whould be included in the `index.js` for react to render these components into the root directory of `index.html`
 
+- We can use variables and functions inside the component by placing it in the javascript curly brackets {}
+
+```javascript
+function component() {
+  return (
+    <div className="main-container">
+      <div className="container">
+        <div className="jumbotron">
+          <h1>Hi! My name is ({name})</h1>
+          <h2>My name has ({name.length}) letters</h2>
+          <h2>My name without any vowels is: ({stripVowels(name)})</h2>
+          <h2>I think React ({thoughts})</h2>
+        </div>
+      </div>
+    </div>
+  );
+}
+```
+
 ## Using React Bootstrap
 
 - `import 'bootstrap/dist/css/bootstrap.min.css';` should be added to the `index.js` file in the react app if bootstrap is to be used- similar to linking in the HTML header page
