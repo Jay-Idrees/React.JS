@@ -8,7 +8,7 @@ This readme file is my personal collection of basic infromation and tips about r
 - `Bootstrap` will install bootstrap. `npm install --save bootstrap` and then import `import 'bootstrap/dist/css/bootstrap.min.css';` to the `index.js` file
 
 
-## General points about React nad Installation
+## General points about React and Installation
 - Uses JSX code which javascrpt code that looks like HTML
 
 - **Installation**
