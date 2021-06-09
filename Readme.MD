@@ -8,12 +8,14 @@ This readme file is my personal collection of basic infromation and tips about r
 - `Bootstrap` will install bootstrap. `npm install --save bootstrap` and then import `import 'bootstrap/dist/css/bootstrap.min.css';` to the `index.js` file
 
 
-## General points about React
+## General points about React nad Installation
 - Uses JSX code which javascrpt code that looks like HTML
 
 - `npm install create-react-app` creats a react application and Babel that compiles JSX and ES6+ into ES5 Javascript - this takes care of version discrepencies at various environments/browsers. 
 
-- `npx create-react-app <app name>` will setup the default folders, Npx is a package itself that comes with npm and will execute pakages. Here it is being used to execute the create-react-app package
+- `npx create-react-app <app name>` will setup the default folders, Npx is a package itself that comes with npm and will execute pakages. Here it is being used to execute the create-react-app package. This will automatically create `.gitignore` file to prevent node modules from being pushed to the repository
+
+- Here `npm uninstall --global create-react-app` to uninstall a global package
 
 - It also integrates 'handlebars' type functionality {} = {{}} of handlebars
 
