@@ -89,7 +89,8 @@ function component() {
 
 import React from "react";
 
-// Note that here the styles is an object. Unlike HTML where you can invoke style as string, in react it must be an object
+// Note that here the styles is an object. 
+// Unlike HTML where you can invoke style as string, in react it must be an object
 
 const styles = {
   card: {
@@ -173,8 +174,7 @@ const styles = {
   }
 };
 
-// We use JSX curly braces to evaluate the style object on the JSX tag
-
+// The section component code
 function Section() {
   return (
     <section style={styles.sectionStyles} className="section">
