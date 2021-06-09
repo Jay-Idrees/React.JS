@@ -4,7 +4,7 @@ This readme file is my personal collection of basic infromation and tips about r
 
 ## React Packages
 
-- `ReactDOM` takes the tree of components and renders them on the DOM
+- `ReactDOM` takes the tree of components and renders them on the DOM. `npx install react-dom`
 - 
 
 
@@ -15,4 +15,6 @@ This readme file is my personal collection of basic infromation and tips about r
 
 - It also integrates 'handlebars' type functionality {} = {{}} of handlebars
 
-- A prop is a function that is passed into a component from outside and can be used inside a component
+- `npm start` to start the react app
+
+- A `prop` is a function that is passed into a component from outside and can be used inside a component
