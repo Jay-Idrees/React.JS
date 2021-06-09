@@ -11,6 +11,8 @@ This readme file is my personal collection of basic infromation and tips about r
 ## General points about React nad Installation
 - Uses JSX code which javascrpt code that looks like HTML
 
+- **Installation**
+
 - `npm install create-react-app` creats a react application and Babel that compiles JSX and ES6+ into ES5 Javascript - this takes care of version discrepencies at various environments/browsers. 
 
 - `npx create-react-app <app name>` will setup the default folders, Npx is a package itself that comes with npm and will execute pakages. Here it is being used to execute the create-react-app package. This will automatically create `.gitignore` file to prevent node modules from being pushed to the repository
@@ -24,9 +26,15 @@ This readme file is my personal collection of basic infromation and tips about r
 - By default there is a `public` folder and a `src` folder. The public folder contains the `index.html` It is the single page of the react app that will display all the components of the react application. It contains the root <div> that will contain the app and the app intern contains all the components
 
 
+**React Specifics**
+
 - A `prop` is a function that is passed into a component from outside and can be used inside a component
 
 - When ever JSX is used the react library should be imported
+
+- In `app.js` the function App is also a component, all 'children' components must be contained inside a <div>
+
+- React used `className` instead of class, because `class` is a keyword in javascript and as JSX is an extension of the javascript so using class in JSX would be like using a javascript command which can create unintended problems
 
 ## Using React Bootstrap
 
