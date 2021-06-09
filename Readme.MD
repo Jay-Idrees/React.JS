@@ -36,6 +36,22 @@ This readme file is my personal collection of basic infromation and tips about r
 
 - React used `className` instead of class, because `class` is a keyword in javascript and as JSX is an extension of the javascript so using class in JSX would be like using a javascript command which can create unintended problems
 
+```javascript
+function App() {
+  return (
+    <div className="container">
+      <Navbar />
+      <Jumbotron />
+      <Card />
+    </div>
+  );
+}
+
+export default App;
+```
+
+`ReactDOM.render(<App />, document.getElementById('root'));` whould be included in the `index.js` for react to render these components into the root directory of `index.html`
+
 ## Using React Bootstrap
 
 - `import 'bootstrap/dist/css/bootstrap.min.css';` should be added to the `index.js` file in the react app if bootstrap is to be used- similar to linking in the HTML header page
