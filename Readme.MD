@@ -11,9 +11,9 @@ This readme file is my personal collection of basic infromation and tips about r
 ## General points about React
 - Uses JSX code which javascrpt code that looks like HTML
 
-- `npm install -g create-react-app` creats a react application and Babel that compiles JSX and ES6+ into ES5 Javascript - this takes care of version discrepencies at various environment `-g` regers to global
+- `npm install create-react-app` creats a react application and Babel that compiles JSX and ES6+ into ES5 Javascript - this takes care of version discrepencies at various environments/browsers. 
 
-- `create-react-app <app name>` will setup the default folders
+- `npx create-react-app <app name>` will setup the default folders, Npx is a package itself that comes with npm and will execute pakages. Here it is being used to execute the create-react-app package
 
 - It also integrates 'handlebars' type functionality {} = {{}} of handlebars
 
