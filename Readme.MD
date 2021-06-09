@@ -52,7 +52,7 @@ export default App;
 
 `ReactDOM.render(<App />, document.getElementById('root'));` whould be included in the `index.js` for react to render these components into the root directory of `index.html`
 
-- We can use variables and functions inside the component by placing it in the javascript curly brackets {}
+- We can use variables and functions inside the component by placing it in the javascript curly brackets {}. We can also use math.random in this way
 
 ```javascript
 function component() {
@@ -74,3 +74,49 @@ function component() {
 ## Using React Bootstrap
 
 - `import 'bootstrap/dist/css/bootstrap.min.css';` should be added to the `index.js` file in the react app if bootstrap is to be used- similar to linking in the HTML header page
+
+
+## Handeling styling with react
+
+- There are two ways
+    - 1) Local styling inside the component, like we use the <style><style> method in html for styling a local page and then invoking them inside the <div>
+    - 2) Creating a new styles folder and then creating new css files inside the folder specific to components such as navbar or jumbotron. Then the css classes can be invoked inside the components as "className=xyz" inside the component <div> See examples below
+
+```javascript
+
+- Local styling inside the component
+
+import React from "react";
+
+const styles = {
+  card: {
+    margin: 20,
+    background: "#e8eaf6"
+  },
+  heading: {
+    background: "#3f51b5",
+    minHeight: 50,
+    lineHeight: 3.5,
+    fontSize: "1.2rem",
+    color: "white",
+    padding: "0 20px"
+  },
+  content: {
+    padding: 20
+  }
+};
+
+function Card() {
+  return (
+    <div style={styles.card}>
+      <div style={styles.heading}>Lorem ipsum dolor</div>
+      <div style={styles.content}>
+        "example text"
+      </div>
+    </div>
+  );
+}
+
+export default Card;
+
+```
