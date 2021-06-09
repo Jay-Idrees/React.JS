@@ -81,6 +81,7 @@ function component() {
 - There are two ways
     - 1) Local styling inside the component, like we use the <style><style> method in html for styling a local page and then invoking them inside the <div>
     - 2) Creating a new styles folder and then creating new css files inside the folder specific to components such as navbar or jumbotron. Then the css classes can be invoked inside the components as "className=xyz" inside the component <div> See examples below
+    - You can also use both these methods together. For instance you can use style before class name to change any background in the standard section class
 
 ```javascript
 
@@ -156,4 +157,35 @@ export default Header;
   color: white;
   font-size: 3rem;
 }
+```
+
+- Using both Style and ClassName together
+
+```javascript
+import React from "react";
+// Note the section file imported form the styles folder to be invoked inside the component
+import "../styles/Section.css";
+
+
+const styles = {
+  sectionStyles: {
+    background: "orange"
+  }
+};
+
+// We use JSX curly braces to evaluate the style object on the JSX tag
+
+function Section() {
+  return (
+    <section style={styles.sectionStyles} className="section">
+      <h2>Example Heading</h2>
+      <p>
+        Example text
+      </p>
+      
+    </section>
+  );
+}
+
+export default Section;
 ```
