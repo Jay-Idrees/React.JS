@@ -30,4 +30,4 @@ This readme file is my personal collection of basic infromation and tips about r
 
 ## Using React Bootstrap
 
-- 
+- `import 'bootstrap/dist/css/bootstrap.min.css';` should be added to the `index.js` file in the react app if bootstrap is to be used- similar to linking in the HTML header page
