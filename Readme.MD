@@ -120,10 +120,9 @@ function Card() {
 export default Card;
 
 ```
+- Importing CSS classes inside the react components from css files in the styles folder
 
 ```javascript
-
-- Importing CSS classes inside the react components from css files in the styles folder
 
 import React from "react";
 import "../styles/Header.css";
@@ -138,6 +137,8 @@ function Header() {
 
 export default Header;
 ```
+
+- The corresponding CSS file in style folder
 ```css
 .header {
   background: #f9b713;
