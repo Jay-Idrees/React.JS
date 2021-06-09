@@ -71,12 +71,12 @@ function component() {
 }
 ```
 
-## Using React Bootstrap
+## Using Bootstrap in React
 
 - `import 'bootstrap/dist/css/bootstrap.min.css';` should be added to the `index.js` file in the react app if bootstrap is to be used- similar to linking in the HTML header page
 
 
-## Handeling styling with react
+## CSS Styling of React Components
 
 - There are two ways
     - 1) Local styling inside the component, like we use the <style><style> method in html for styling a local page and then invoking them inside the <div>
@@ -84,7 +84,7 @@ function component() {
 
 ```javascript
 
-- Local styling inside the component
+- 1) Local styling inside the component
 
 import React from "react";
 
@@ -119,4 +119,36 @@ function Card() {
 
 export default Card;
 
+```
+
+```javascript
+
+- Importing CSS classes inside the react components from css files in the styles folder
+
+import React from "react";
+import "../styles/Header.css";
+
+function Header() {
+  return (
+    <header className="header">
+      <h1>Home</h1>
+    </header>
+  );
+}
+
+export default Header;
+```
+```css
+.header {
+  background: #f9b713;
+  height: 200px;
+}
+
+.header h1 {
+  margin: 0;
+  padding-top: 75px;
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+}
 ```
