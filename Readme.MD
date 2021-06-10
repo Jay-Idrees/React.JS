@@ -43,7 +43,7 @@ function App() {
       <Title>Friends List</Title>
       <FriendCard
       // Here you are selecting the first object [ordered as 0] from the array and 
-      // then specifically extracting image 
+      // then specifically extracting name or image etc
         name={friends[0].name}
         image={friends[0].image}
         occupation={friends[0].occupation}
