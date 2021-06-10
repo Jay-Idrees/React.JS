@@ -25,6 +25,19 @@ This readme file is my personal collection of basic infromation and tips about r
 
 - By default there is a `public` folder and a `src` folder. The public folder contains the `index.html` It is the single page of the react app that will display all the components of the react application. It contains the root < div > that will contain the app and the app intern contains all the components as props. The the props are then passed on as parameter into the function of that component. Below is a good example
 
+
+
+**React Specifics**
+
+- A `prop` is a function that is passed into a component from outside and can be used inside a component
+
+- When ever JSX is used the react library should be imported with `import React from "react";`
+
+- In `app.js` the function App is also a component, all 'children' components must be contained inside a <div>
+
+- When using `props` the data first comes into the App.js - the final app component - it can be either from a form or is imported from a JSON file or some database (SQL, Mongo DB). Each of the fields of the data are then tagged and using the tags passed onto the individual components
+
+
 - Inside `app.js`
 
 ```javascript
@@ -107,17 +120,6 @@ function FriendCard(props) {
 
 export default FriendCard;
 ```
-
-
-**React Specifics**
-
-- A `prop` is a function that is passed into a component from outside and can be used inside a component
-
-- When ever JSX is used the react library should be imported with `import React from "react";`
-
-- In `app.js` the function App is also a component, all 'children' components must be contained inside a <div>
-
-- When using `props` the data first comes into the App.js - the final app component - it can be either from a form or is imported from a JSON file or some database (SQL, Mongo DB). Each of the fields of the data are then tagged and using the tags passed onto the individual components
 
 
 - React used `className` instead of class, because `class` is a keyword in javascript and as JSX is an extension of the javascript so using class in JSX would be like using a javascript command which can create unintended problems
