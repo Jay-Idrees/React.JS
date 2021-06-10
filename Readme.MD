@@ -54,7 +54,8 @@ function App() {
 // Then you pass on the data elements as props
 // Then the component gets loaded with the data that is specified
 // The final component with data is then generated in the app component
-// data (form or some database)-> App.js -> Component as props -> updated component with data -> component generated in app.js
+// data (form or some database)-> App.js -> Component as props -> updated component with data -> Final component is then
+// generated in app.js
         name={friends[1].name}
         image={friends[1].image}
         occupation={friends[1].occupation}
