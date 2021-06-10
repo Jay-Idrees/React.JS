@@ -31,7 +31,7 @@ This readme file is my personal collection of basic infromation and tips about r
 
 - A `prop` is a function that is passed into a component from outside and can be used inside a component
 
-- When ever JSX is used the react library should be imported with `import React from "react";`
+- Whenever JSX is used the react library should be imported with `import React from "react";`
 
 - In `app.js` the function App is also a component, all 'children' components must be contained inside a <div>
 
@@ -87,7 +87,7 @@ function App() {
 export default App;
 ```
 
-- Inside the FriendCard component
+- Inside the FriendCard component. This is inside the located in the component folder, which is located in the src folder of the react app
 
 ```javascript
 import React from "react";
