@@ -38,7 +38,7 @@ This readme file is my personal collection of basic infromation and tips about r
 - When using `props` the data first comes into the App.js - the final app component - it can be either from a form or is imported from a JSON file or some database (SQL, Mongo DB). Each of the fields of the data are then tagged and using the tags passed onto the individual components
 
 
-- Inside `app.js`
+- Inside `app.js` located inside the src folder
 
 ```javascript
 import React from "react";
@@ -87,7 +87,7 @@ function App() {
 export default App;
 ```
 
-- Inside the FriendCard component. This is inside the located in the component folder, which is located in the src folder of the react app
+- Inside the FriendCard component. This is located in the component folder, which is located in the src folder of the react app
 
 ```javascript
 import React from "react";
