@@ -189,3 +189,17 @@ function Section() {
 
 export default Section;
 ```
+
+- Some basic code for index.css
+```css
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html, body, #root {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+```
