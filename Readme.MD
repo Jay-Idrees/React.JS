@@ -291,3 +291,58 @@ html, body, #root {
   height: 100%;
 }
 ```
+
+## Using MAP and FILTER for listing in React
+
+- In addition to database or form, the source of the data can also be a variable. In this example you can see a list of groceries is used that is stored in a groceries variable
+
+- In the app.js in the src folder:
+
+```javascript
+
+import React from "react";
+import List from "./components/List";
+
+const groceries = [
+  {
+    id: 1,
+    name: "Milk",
+    purchased: true
+  },
+  {
+    id: 2,
+    name: "Eggs",
+    purchased: true
+  },
+  {
+    id: 3,
+    name: "Cheese",
+    purchased: false
+  },
+  {
+    id: 4,
+    name: "Cake Mix",
+    purchased: false
+  },
+  {
+    id: 5,
+    name: "Carrots",
+    purchased: false
+  },
+  {
+    id: 6,
+    name: "Juice",
+    purchased: true
+  }
+];
+
+function App() {
+  return <List groceries={groceries} />;
+}
+
+export default App;
+```
+
+- Then in the list component file which is in the components folder in the src folder
+
+
