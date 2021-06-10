@@ -27,7 +27,7 @@ This readme file is my personal collection of basic infromation and tips about r
 
 
 
-**React Specifics**
+## Props
 
 - A `prop` is a function that is passed into a component from outside and can be used inside a component
 
