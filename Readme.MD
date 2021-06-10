@@ -303,7 +303,9 @@ html, body, #root {
 import React from "react";
 import List from "./components/List";
 
+// This is an object called groceries containing individual items composed of data elements
 const groceries = [
+    // It is an array of objects
   {
     id: 1,
     name: "Milk",
@@ -348,6 +350,12 @@ export default App;
 ```javascript
 function List(props) {
   return (
+//Here the class name is the standard class as used with bootstrap. 
+// Same like before, app.js loads groceries data from the groceries object
+// Passes it on to the list component
+// The updated final component with loaded data is then generated in app.js
+// Here you are also modifying the data loaded using map, so the text list gets appropriate styling
+// The purpose of key is for react to track changes for a particular element
     <ul className="list-group">
       {props.groceries.map(item => (
         <li className="list-group-item" key={item.id}>
@@ -365,10 +373,11 @@ export default List;
 ```javascript
 import React from "react";
 
-// Whenever we try to render an array containing JSX, React knows to render each JSX element separately
 function List(props) {
-  // Using the filter method, we can create a new array containing only groceries which haven't been purchased
-  const notPurchased = props.groceries.filter(grocery => !grocery.purchased);
+  // A new variable is created that only contains the groceries that are not purchased
+  // Note that the groceries object contains true/false element for each sub-object with purchased element
+  // !item.purchased is shortlisting only the items that have purchased element specified as false
+  const notPurchased = props.groceries.filter(item => !item.purchased);
 
   return (
     <ul className="list-group">
