@@ -37,6 +37,9 @@ This readme file is my personal collection of basic infromation and tips about r
 
 - When using `props` the data first comes into the App.js - the final app component - it can be either from a form or is imported from a JSON file or some database (SQL, Mongo DB). Each of the fields of the data are then tagged and using the tags passed onto the individual components
 
+- One tricky point is that you can transfer data as props between components instead of app.js to component. App.js in itself is a component. In this case the main component that will be generated in the final app.js will be the one containing data. So the data will flow as Main component contiains sister component-> data from main component is transfred to the sister component as props-> the sister component then loads the data and the final sister component is then generated inside the main component and the final main component is then finally loaded in app.js
+
+- The form of data transferred as props can also be a function
 
 - Inside `app.js` located inside the src folder
 
