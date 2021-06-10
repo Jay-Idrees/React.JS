@@ -32,7 +32,8 @@ import React from "react";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
 import FriendCard from "./components/FriendCard";
-import friends from "./friends.json"; // Note that the data is imported here from JSON file called friends.json.
+import friends from "./friends.json"; 
+// Note that the data is imported here from JSON file called friends.json.
 // This file contains an array of objects. Each object consist of name, image, occupation and location
 // Here you are giving a generic name to each object group "friends"
 
@@ -41,13 +42,19 @@ function App() {
     <Wrapper>
       <Title>Friends List</Title>
       <FriendCard
-      // Here you are selecting the first object [ordered as 0] from the array and then specifically extracting image 
+      // Here you are selecting the first object [ordered as 0] from the array and 
+      // then specifically extracting image 
         name={friends[0].name}
         image={friends[0].image}
         occupation={friends[0].occupation}
         location={friends[0].location}
-      />
+      />   
       <FriendCard
+// Here you load the component into the app
+// Then you pass on the data elements as props
+// Then the component gets loaded with the data that is specified
+// The final component with data is then generated in the app component
+// data (form or some database)-> App.js -> Component as props -> updated component with data -> component generated in app.js
         name={friends[1].name}
         image={friends[1].image}
         occupation={friends[1].occupation}
@@ -72,6 +79,8 @@ export default App;
 import React from "react";
 import "./style.css";
 
+// Note that here adding props is giving the component the capability to receive data
+// What data is received is determined by what data is imported into the App component
 function FriendCard(props) {
   return (
     <div className="card">
