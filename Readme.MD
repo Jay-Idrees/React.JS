@@ -25,7 +25,78 @@ This readme file is my personal collection of basic infromation and tips about r
 
 - By default there is a `public` folder and a `src` folder. The public folder contains the `index.html` It is the single page of the react app that will display all the components of the react application. It contains the root <div> that will contain the app and the app intern contains all the components as props. The the props are then passed on as parameter into the function of that component. Below is a good example
 
-- Inside `app.js
+- Inside `app.js`
+
+```javascript
+import React from "react";
+import Wrapper from "./components/Wrapper";
+import Title from "./components/Title";
+import FriendCard from "./components/FriendCard";
+import friends from "./friends.json"; // Note that the data is imported here from JSON file called friends.json.
+// This file contains an array of objects. Each object consist of name, image, occupation and location
+// Here you are giving a generic name to each object group "friends"
+
+function App() {
+  return (
+    <Wrapper>
+      <Title>Friends List</Title>
+      <FriendCard
+      // Here you are selecting the first object [ordered as 0] from the array and then specifically extracting image 
+        name={friends[0].name}
+        image={friends[0].image}
+        occupation={friends[0].occupation}
+        location={friends[0].location}
+      />
+      <FriendCard
+        name={friends[1].name}
+        image={friends[1].image}
+        occupation={friends[1].occupation}
+        location={friends[1].location}
+      />
+      <FriendCard
+        name={friends[2].name}
+        image={friends[2].image}
+        occupation={friends[2].occupation}
+        location={friends[2].location}
+      />
+    </Wrapper>
+  );
+}
+
+export default App;
+```
+
+- Inside the FriendCard component
+
+```javascript
+import React from "react";
+import "./style.css";
+
+function FriendCard(props) {
+  return (
+    <div className="card">
+      <div className="img-container">
+        <img alt={props.name} src={props.image} />
+      </div>
+      <div className="content">
+        <ul>
+          <li>
+            <strong>Name:</strong> {props.name}
+          </li>
+          <li>
+            <strong>Occupation:</strong> {props.occupation}
+          </li>
+          <li>
+            <strong>Location:</strong> {props.location}
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+}
+
+export default FriendCard;
+```
 
 
 **React Specifics**
